@@ -1,0 +1,324 @@
+/* General Styles */
+@font-face {
+  font-family: 'ThePocong';
+  src: url('resources/fonts/ThePocong.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnmaskedBB';
+  src: url('resources/fonts/unmasked-bb.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mickey';
+  src: url('resources/fonts/Minnie.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Snavirus';
+  src: url('resources/fonts/snavirus.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TheJacatra';
+  src: url('resources/fonts/the-jacatra.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color:#6954a0;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#3C2D67;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #f4f4f4; /* Fallback color */
+}
+
+/* Parallax Background */
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh; /* Adjust based on image length */
+  background: url('resources/images/site background/InIWallpaper.png') no-repeat center var(--start-pos, 0px);
+  background-size: 100% auto;
+  z-index: -1;
+
+  /* Default values that can be overridden per page */
+  --start-pos: 0px;
+  --scroll-speed: 0.5; /* Default scroll speed */
+}
+
+.header {
+  background: url('resources/images/headers/header.png') no-repeat center center;
+  background-size: cover; /* or contain, depending on your needs */
+  width: 100%; /* Ensure the element has a width */
+  height: 300px; /* Adjust height as needed */
+  display: block; /* Ensure it's displayed as a block element */
+}
+
+/* Center White Rectangle */
+.container {
+  background: white;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+header img {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  background: #3C2D67;
+  padding: 0.5rem;
+  height: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #3C2D67;
+  color: white;
+  padding: 0.5rem;
+  height: 40px;
+  text-align: center;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.footer-spacer {
+  height: 50px;
+  background-color: transparent;
+}
+
+
+nav a.nav-link {
+  color: lightgray;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-family: 'ThePocong', Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+nav a.nav-link:hover {
+  color: white;
+}
+
+/* Main Layout */
+.main-content {
+  display: flex;
+  padding: 1rem;
+}
+
+.news-board {
+  width: 30%;
+  font-size: 14px;
+  background: #6954a0;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.homepage-content {
+  width: 80%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .news-board,
+  .homepage-content {
+    width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.column ul {
+  padding-left: 3px;
+}
+
+.column img{
+  width: 100%;
+  height: auto;
+}
+
+#ZhannaH2{
+  /*color:#3C2D67;*/
+  /*color: #da6201;
+  color: #bf1c0c;*/
+  font-family: 'Snavirus', sans-serif;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ff7f17,#000) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color:transparent !important;
+}
+
+#Zhanna{
+  color:#000;
+  font-family: 'Snavirus', sans-serif;
+  /*font-weight: bold;*/
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#Zhanna:hover{
+  background: -webkit-linear-gradient(#fd8625,#000) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color:transparent !important;
+  /*text-shadow: 1px 1px 0px rgb(0, 0, 0);*/
+}
+
+h2.pocong-font{
+  margin-top: -3%;
+  margin-bottom: -1%;
+  font-family: 'ThePocong', sans-serif;
+  font-size: 45px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pages {
+  text-align: left;
+}
+
+.page-turner{
+  font-family: 'UnmaskedBB', sans-serif;
+  font-size: 40px;
+  color:#000;
+  text-decoration: none;
+}
+
+.page-turner:hover {
+  color:#6954a0;
+}
+
+.comic-image {
+  width:100%;
+}
+
+#MickeyH2{
+  color:rgb(212, 10, 10);
+  text-shadow: 4px 4px 0px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+#Mickey{
+  color:darkred;
+  font-family:'Mickey', sans-serif;
+  text-shadow: 1.5px 1.5px 0px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  text-decoration: none;
+}
+
+#Mickey:hover{
+  color: rgb(213, 12, 12);
+}
+
+h2.mickey-font {
+  margin-top: -3%;
+  margin-bottom: -1%;
+  font-family:'Mickey', sans-serif;
+  font-size: 45px;
+}
+
+.side-comment { /*what it says on the in lol*/
+  color:lightgray;
+  font-size: 10px;
+}
+
+#decrease-margin {
+  margin-top:-1%;
+  margin-bottom: 1%;
+}
+
+#TATV {
+  text-decoration: none;
+  font-family: 'TheJacatra',sans-serif;
+  /*position: relative;
+  font-style:oblique;
+  font-weight:bold;*/
+  color: rgb(83, 83, 83);
+}
+
+/*Growing Blcok upon hover
+#Anthony::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+#Anthony:hover::before {
+  bottom: 0;
+  height: 100%;
+}*/
+
+#TATV:hover {
+  background: -webkit-linear-gradient(#000, rgb(136, 0, 0)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color:transparent !important;
+  /*text-shadow: 1px 1px 0px rgb(0, 0, 0); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
